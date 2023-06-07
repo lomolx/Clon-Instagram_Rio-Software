@@ -1,0 +1,449 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16;
+    color: rgb(0, 0, 0);
+}
+
+
+.cuerpo-general{
+    display: flex;
+    flex-direction: row;
+}
+
+/* barra lateral*/
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(182, 175, 175);
+    padding: 0px 15px;
+    height: 100vh;
+    width: 240px;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+
+.logo{
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.container-botones {
+    height: 100%;
+}
+
+.boton-nav{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    padding: 10px;
+    text-align: center;
+    text-justify: auto;
+    line-height: 20px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.boton-nav:hover{
+    background-color: rgb(189, 181, 181);
+    transition-delay: 0.25s;
+}
+.boton-mas {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    padding: 10px;
+    text-align: center;
+    text-justify: auto;
+    line-height: 20px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.boton-mas img{
+    margin-right: 10px;
+}
+
+.logo-reducido{
+    display: none
+}
+/*Navegacion superior*/
+
+.barra-superior2{
+    display:none;
+}
+/*Navegacion inferior*/
+.barra-navegacion-inferior{
+    display: none;
+}
+.container-botones-inferior{
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-nav img{
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+}
+.informacion-personal a{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+}
+.informacion-personal ul{
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+}
+.icono-perfil{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    
+}
+.boton-editar {
+    background-color: rgb(173, 170, 170);
+    border-radius: 10px;
+    text-align: center;
+}
+
+body{
+    margin: 0PX;
+}
+/*Pagina general*/
+.seccion-principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+.boton-editar-perfil{
+    background-color: rgb(173, 170, 170);
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    display: none;
+}
+.encabezado{
+    display: flex;
+    width: 100%;
+}
+.foto-perfil{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foto-perfil > img{
+    border-radius: 50%;
+}
+.tag-usuario{
+    padding-left: 10px;
+}
+.tag-usuario h6{
+    margin: 0px;
+}
+.tag-usuario2{
+    display: none;
+}
+/* Historias */
+.historias {
+    display: flex;
+    margin: 45px 0px 40px 35px;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.historia {
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.historia img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 1px solid grey;
+}
+
+/*Cinta medio*/
+.cinta-medio{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid rgb(153, 151, 151);
+}
+
+.cinta-medio-1{ 
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid rgb(153, 151, 151);
+    display: none;
+}
+.cinta-medio img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.cinta-medio li{
+    display: flex;
+    align-content: center;
+    margin: 0px 25px;
+    height: 50px;
+}
+.cinta-medio a{
+    display: flex;
+    align-items: center;
+}
+.cinta-medio ul{
+    margin: 0px 25px;
+    height: 100%;
+}
+.lista-remarcada{
+    border-top: 1px solid black
+}
+
+/*Galeria de imagenes*/
+
+
+.galeria{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    gap: 0.5em;
+}
+.galeria img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*elementos de pie de pagina*/
+
+footer ul li{
+    font-size: 11px;
+    margin: 0px 10px;
+}
+
+.lista-centrada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*contenedor superior*/
+.contenedor-superior{
+    width: 900px;
+    padding: 60px 20px 20px 0px;
+}
+
+
+/* Media barra lateral iconos */
+@media ( width < 1263px){
+    .boton-nav > a >li{
+        display:none;
+    }
+    .flex-container {
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .logo-amplio{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo-reducido {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        
+        
+    }
+    
+    .container-botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+    .boton-nav{
+        margin: 5px 0px;
+        width: 30px;
+        height: 30px;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .boton-nav > img{
+        margin: 0px;
+    }
+
+    .boton-mas{
+        display: flex;
+        align-items: center;
+    }
+
+    .boton-mas span{
+        display: none;
+    }
+
+    .contenedor-superior{
+        width: 100%;
+    }
+
+    .galeria img{
+        object-fit: cover;
+    }
+
+}
+
+/* Media Barra Inferior */
+@media (width < 766px){
+    .cuerpo-general {
+        flex-direction: column;
+    }
+
+    .flex-container{
+        display: none;
+    }
+    .barra-superior2{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        background-color: white;
+        padding: 0px 16px;
+        height: 40px;
+        align-items: center;
+        position: sticky;
+        top: 0%;
+    }
+    .barra-superior2 b{
+        font-size: 20px;
+    }
+    .barra-navegacion-inferior{
+        display: flex;
+        flex-direction: row;
+        position:sticky;
+        bottom: 0%;
+        height: 65px;
+        border-top: 1px solid gray;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .container-botones-inferior {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .boton-nav-inferior{ 
+        display: flex;
+        align-items: center;
+    }
+    
+    .boton-editar{
+        display: none;
+    }
+
+    .boton-editar-perfil{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .tag-usuario2{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 15px;
+    }
+    .tag-usuario2 h6{
+        margin: 0px;
+    }
+    .tag-usuario{
+        display: none;
+    }
+
+    .historias{
+        margin: 20px 0px;
+    }
+    .foto-perfil{
+        width: auto;
+        margin-left: 15px;
+    }
+    .cinta-medio span{
+        display: none;
+    }
+    .cinta-medio-1 {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .cinta-medio ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+    .cinta-medio li{
+        margin: 0px;
+        justify-content: center;
+    }
+
+    .cinta-medio img{
+        width: 30px;
+        padding-left: 15px ;
+    }
+
+    .lista-seguidores{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (prefers-color-scheme:dark) {
+    *{
+        color: white;
+    }
+    body, .barra-navegacion-inferior, .barra-superior2{
+        background-color: black;
+    }
+    .flex-container img, .cinta-medio img, .barra-navegacion-inferior img, .barra-superior2 img, .informacion-personal img{
+        filter: invert();
+    }
+}
